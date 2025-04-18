@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Netflix</title>
+    <link rel="stylesheet" href="css/home.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .hero img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin: 20px 0;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .buttons button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .message {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #ff4d4d;
+        }
+
+        .btn-continue {
+            display: inline-block;
+            font-size: 24px;
+            padding: 15px 30px;
+            background-color: #ff4d4d;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .btn-continue:hover {
+            background-color: #e63946;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">PARA MAYLOVE ❣️</div>
+        <nav>
+            <ul>
+                <li><a href="1.html">¿Por qué ser mi San Valentín?</a></li>
+                <li><a href="2.html">¿Por qué te elegí?</a></li>
+                <li><a href="3.html">Las cosas que me hacen sonreír de ti</a></li>
+                <li><a href="4.html">Una canción que me recuerda a ti</a></li>
+                <a href="pedida.html" class="btn-continue">Continuar ❤️</a>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <img src="fotos/Imagen de WhatsApp 2025-02-06 a las 19.21.35_4d9fc400.jpg" alt="Imagen dedicada">
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let heroSection = document.querySelector(".hero");
+            heroSection.style.backgroundPosition = "center 20%";
+            heroSection.style.transition = "background-position 0.5s ease-in-out";
+        });
+    </script>
+</body>
+</html>
